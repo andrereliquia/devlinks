@@ -12,11 +12,11 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="getActualYear()">
     <div id="container">
       <div id="profile">
         <img
-          src="./assets/assets/andre-avatar.png"
+          src="./assets/avatar.png"
           alt="Foto frontal de André Relíquia, sorrindo em um ângulo lateral olhando para a direita, utilizando camiseta cavada. Fundo da foto cinza."
         />
         <p>@andrereliquia</p>
@@ -28,17 +28,14 @@
       </div>
       <ul>
         <li>
-          <a href="#">Inscreva-se no NLW</a>
+          <a href="https://www.youtube.com/andrereliquia?sub_confirmation=1" target="_blank">Inscreva-se no meu Canal</a>
         </li>
         <li>
-          <a href="#">Baixar meu e-book</a>
+          <a href="https://github.com/andrereliquia" target="_blank">Ver meu portifólio</a>
         </li>
         <li>
-          <a href="#">Ver meu portifólio</a>
-        </li>
-        <li>
-          <a href="https://www.rocketseat.com.br/discover" target="_blank"
-            >Conheça o Discover</a
+          <a href="#" target="_blank"
+            >Projeto Atual</a
           >
         </li>
       </ul>
@@ -56,11 +53,17 @@
           <ion-icon name="logo-linkedin"></ion-icon>
         </a>
       </div>
+
       <footer>
-        Feito com ♥ por
-        <a href="https://www.linkedin.com/in/andre-reliquia/" target="_blank"
+        <strong id="ano"></strong>Desenvolvido por<a
+          href="https://www.linkedin.com/in/andre-reliquia/"
+          target="_blank"
           >André Relíquia</a
         >
+        <div class="version">
+          <b>Version</b>
+          1.0
+        </div>
       </footer>
     </div>
 
